@@ -58,7 +58,7 @@ const createScene = () => {
     table.material = tableMat;
 
     // Creating Flower Pot for Table
-    const flowerPot = BABYLON.SceneLoader.ImportMesh(null, "./Realistic-3d-Room/assets/models/flowerpot/", "scene.gltf", scene, function (meshes) { 
+    const flowerPot = BABYLON.SceneLoader.ImportMesh(null, "Realistic-3d-Room/assets/models/flowerpot/", "scene.gltf", scene, function (meshes) { 
         // Editing the mesh or meshes
         const mesh = meshes[0]; // Picking all meshes
         mesh.scaling = new BABYLON.Vector3(0.001, 0.001, 0.001);
